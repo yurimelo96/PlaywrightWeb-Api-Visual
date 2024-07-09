@@ -1,0 +1,32 @@
+name: Executar Testes
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v2
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Executar testes E2E
+        run: npm run test:e2e
+
+      - name: Executar testes GraphQL
+        run: npm run test:api
+
+      - name: Executar testes de regressão visual
+        run: npm run test:visual
