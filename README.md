@@ -81,3 +81,26 @@ A estrutura do projeto é organizada da seguinte forma:
 - **playwright.yml**: Define um workflow do GitHub Actions para executar testes em push e pull requests nas branches `main` e `master`. Inclui etapas para checkout do código, configuração do Node.js, instalação das dependências, instalação dos navegadores do Playwright e execução dos testes.
 
 - **tests.yml**: Define um workflow do GitHub Actions que pode ser acionado manualmente via `workflow_dispatch` ou automaticamente em push para a branch `main`. Inclui etapas para checkout do código, configuração do Node.js, instalação das dependências e execução dos testes E2E, testes de API e testes de regressão visual.
+
+### Prints das execuções:
+
+- Execução Web e2e
+- ![image](https://github.com/yurimelo96/PlaywrightWeb-Api-Visual/assets/54452187/e4e66187-eef8-49be-9191-ed3959f95ad8)
+
+- Execução API
+![image](https://github.com/yurimelo96/PlaywrightWeb-Api-Visual/assets/54452187/843cc838-ebc6-4a42-8a81-13a2e06b1087)
+
+- Execução Regressão Visual com erro
+![image](https://github.com/yurimelo96/PlaywrightWeb-Api-Visual/assets/54452187/ded11928-0982-40d3-803b-8d2fcae1a9dc)
+
+Imagem printada durante a execução:
+![image](https://github.com/yurimelo96/PlaywrightWeb-Api-Visual/assets/54452187/b64bad58-8c70-45d9-a0e4-17ca22f947d6)
+
+Imagem aleatória usada para comparar:
+![image](https://github.com/yurimelo96/PlaywrightWeb-Api-Visual/assets/54452187/e37f24ff-a704-4845-bcd2-71770cd75b20)
+
+Erro visual apresentado pela execução:
+![image](https://github.com/yurimelo96/PlaywrightWeb-Api-Visual/assets/54452187/cd3543d8-9421-47c5-ac99-ebe466042ec8)
+
+- Execução Regressão Visual com Sucesso
+![image](https://github.com/yurimelo96/PlaywrightWeb-Api-Visual/assets/54452187/a3a43617-5247-4bf8-aac7-39e8c0aec2a6)
